@@ -8,7 +8,7 @@ class CreateUserView(generics.CreateAPIView):
     queryset = User.objects.all()
     #get all users
 
-    serializer_class = User
+    serializer_class = UserSerializer
     #what kind of data we need to accept from serializer to create new user
 
     permission_classes = [AllowAny]
