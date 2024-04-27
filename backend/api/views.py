@@ -10,7 +10,7 @@ class NoteListCreate(generics.ListCreateAPIView):
     serializer_class = NoteSerializer
     permission_class = [IsAuthenticated]
 
-    def ger_queryset(self):
+    def get_queryset(self):
         user = self.request.user
         #returns authenticated user
 
